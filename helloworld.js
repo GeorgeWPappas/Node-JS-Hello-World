@@ -14,6 +14,9 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => res.render('home'))
 
+app.get('/abput', (req, res) => res.render('about'))
+
+
 // Custom 404 page.
 app.use((req, res) => {
   res.status(404)
@@ -29,4 +32,3 @@ app.use((err, req, res, next) => {
 
 app.listen(port, () => console.log(`Express started on http://localhost:${port}; ` +
   `press Ctrl-C to terminate.`))
-  
