@@ -14,8 +14,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => res.render('home'))
 
-app.get('/abput', (req, res) => res.render('about'))
-
+app.get('/about', (req, res) => res.render('about'))
 
 // Custom 404 page.
 app.use((req, res) => {
